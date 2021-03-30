@@ -17,6 +17,7 @@ namespace API.Extensions
             //Added DI for TokenService - Srikar
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPhotoService, PhotoService>();
+            services.AddScoped<LogUserActivity>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             //Added DI for db Context - Srikar
